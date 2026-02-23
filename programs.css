@@ -1,0 +1,193 @@
+body {
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.topnav 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6f8fb;
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 25px solid #0364a4;
+}
+
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+.nav-right a {
+  color: #0364a4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.nav-right a:hover {
+  background-color: #ddd;
+  color: #0364a4;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.title h1 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.description h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.title.hero-partners{
+  text-align: center;
+  padding: 20px;
+}
+
+ul {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 350;
+    font-size: 18px;
+    display: inline-block;      
+    text-align: left;  
+}
+
+.description{
+    background-color: #f2f2f2;
+    padding: 40px;
+    text-align: center;
+}
+
+.description a {
+    color: #0165a4;
+    text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #0364a4;
+  text-align: center;
+}
+
+.partners-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.hero-partners {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/LABest.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-workforce {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/workforce.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+}
+
+.hero-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  color: white;
+}
+
+.hero-text h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.companies-container {
+  background-color: #f2f2f2;
+}
+
+.icon-grid img {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.reveal-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 600ms ease, transform 600ms ease;
+  will-change: transform, opacity;
+}
+
+.reveal-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-up {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}

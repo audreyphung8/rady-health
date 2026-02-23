@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="programs.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="topnav">
+        <a href="index.html">
+            <div class="nav-left">
+                <img src="assets/CHOC-logo.png" alt="CHOC research logo" class="CHOC logo"/>
+            </div>
+        </a>
+        <nav class="nav-right">
+            <a href="services.html">Services</a>
+            <a href="partners.html">Partners</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero-workforce">
+        <div class="hero-text">
+            <h1>Healthcare Workforce Development</h1>
+        </div>
+    </section>
+
+    <div class="description">
+        <div class="title py-3">
+            <h1>What we do</h1>
+        </div>
+        <ul>
+            <li>Capstone site project collaboration with industry, start-ups, and UC Irvine</li>
+            <li>MPH practicum supervision in biostatistics and public health informatics</li>
+            <li>Internships:</li>
+            <ul>
+                <li>Biostatistics and Data Science</li>
+                <li>Device Testing</li>
+                <li>Implementation Science</li>
+                <li>Program Evaluation</li>
+                <li>Public Health and Epidemiology (PHIT)</li>
+            </ul>
+        </ul>
+    </div>
+
+    <div class="title py-10">
+        <h1>Projects</h1>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-2 gap-4">
+            <div class="card reveal-up" style="width: 18rem;">
+                <img src="/assets/RSV-Risk-Profiling.png" class="card-img-top" alt="RSV-Risk-Profiling Research Poster">
+                <div class="card-body">
+                    <h5 class="card-title">Risk Profiling Unvaccinated Children for RSV in Orange County</h5>
+                    <p class="card-text">This project introduces a generative AI agent that bridges clinicians’ questions and statistical analyses, delivering tailored visualizations and interpretable results.</p>
+                    <div class="flex items-center gap-3 mt-3">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rsvRiskProfiling">
+                            Learn More
+                        </button>
+                        <img src="/assets/CHOC-logo2.png" class="absolute right-6 bottom-6 h-6 w-auto" alt="CHOC logo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="rsvRiskProfiling" tabindex="-1" role="dialog" aria-labelledby="projectTitle" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectTitle">Risk Profiling Unvaccinated Children for RSV in Orange County</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="text-muted mb-2">Description:</h6>
+                        This is a capstone project for UC Irvine students that analyzes RSV incidence and nirsevimab immunization rates across Orange County.
+                         The project identifies trends in neighborhoods and demographic groups with high RSV positivity rates. To support more efficient 
+                         collaboration between clinicians and biostatisticians, the team proposed a query-based generative AI agent that enables clinicians 
+                         to interact directly with RSV surveillance data, increasing the flexibility of cross-sectional research.
+                        <h6 class="text-muted mb-2">Check it out:</h6>
+                         <div class="row g-4">
+                            <div class="col-12 col-md-6">
+                                <iframe
+                                    src="assets/pdfs/RSV-Risk-Profiling/final-report.pdf"
+                                    class="w-100"
+                                    height="500"
+                                    title="Final Report PDF"
+                                ></iframe>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <iframe
+                                    src="assets/pdfs/RSV-Risk-Profiling/institutional-review-board.pdf"
+                                    class="w-100"
+                                    height="500"
+                                    title="IRB PDF"
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- <ul>
+        <li>
+            <a href="https://ics.uci.edu/2025/10/03/uc-irvine-data-science-students-partner-with-choc-research-and-rady-childrens-health-to-develop-personalized-pediatric-dehydration-management-solutions/">UC Irvine Data Science Students Partner with CHOC Research, Now Part of Rady Children’s Health, to Develop Personalized Pediatric Dehydration Management Solutions</a>
+        </li>
+    </ul> -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

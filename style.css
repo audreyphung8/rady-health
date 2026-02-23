@@ -1,0 +1,276 @@
+body {
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.topnav 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6f8fb;
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 25px solid #0364a4;
+}
+
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+.nav-right a {
+  color: #0364a4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.nav-right a:hover {
+  background-color: #ddd;
+  color: #0364a4;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+* {box-sizing:border-box}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 48px;
+  border-bottom: 1px solid #ddd;
+}
+
+.hero-media {
+  
+  position: right;
+  margin-left: auto;
+}
+
+.headerSlides {
+  display: none;
+}
+
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin-left: 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.hero-content {
+  align-self: flex;
+}
+
+.hero-content h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  color: #0364a4;
+}
+
+.hero-content h2{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.hero-content button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+
+  padding: 16px 32px;
+  background-color: #CC5500;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mission-statement {
+  text-align: center;
+  padding: 20px;
+}
+
+.mission-statement h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.mission-statement p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 350;
+  font-size: 18px;
+}
+
+.programs-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  padding: 40px;
+}
+
+.cards {
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden; 
+  border: 1px solid #ddd;
+  position: relative;   
+  height: 100%;
+}
+
+.cards img {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+  display: block;
+}
+
+.cards h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 350;
+  font-size: 18px;
+  text-align: center;
+  color: #0364a4;
+}
+
+.cards::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.45);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  border-radius: 6px; 
+}
+
+.cards:hover::after {
+  opacity: 1;
+}
+
+.partners-container{
+  background-color: #f2f2f2;
+}
+
+.partners-cards { 
+  display: grid; 
+  grid-template-columns: repeat(3, minmax(250px,1fr)); 
+  gap: 32px; 
+  padding: 40px; 
+}
+
+.partners-card { 
+  background: #fff; 
+  border: 1px solid rgba(0,0,0,0.10); 
+  border-radius: 5px; 
+  overflow: hidden; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: clamp(48px, 6vw, 72px);
+}
+
+.partners-card > img:first-of-type { 
+  width: 100%; 
+  height: 350px; 
+  object-fit: cover; 
+  display: block; 
+}
+
+.partners-title {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: -50px;
+}
+
+.partners-title h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.partners-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #0364a4;
+  font-weight: 600;
+  text-align: center;
+}
+
+.partners-card p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  padding-inline: clamp(12px, 2vw, 22px);
+}
+
+.choc-logo {
+  position: absolute;
+  bottom: clamp(10px, 1.5vw, 16px);
+  left: clamp(10px, 1.5vw, 16px);
+  max-width: clamp(60px, 8vw, 90px);
+  max-height: clamp(20px, 3vw, 28px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button-container {
+  text-align: center;
+  padding-bottom: clamp(24px, 5vw, 80px);
+}
+
+.button-container button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+
+  padding: 16px 32px;
+  background-color: #CC5500;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+
+
