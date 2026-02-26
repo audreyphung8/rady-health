@@ -23,7 +23,7 @@
         <nav class="nav-right">
             <a href="services.html">Services</a>
             <a href="partners.html">Partners</a>
-            <a href="#contact">Contact</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
@@ -55,62 +55,121 @@
         <h1>Projects</h1>
     </div>
 
-    <div class="container">
-        <div class="row row-cols-2 gap-4">
-            <div class="card reveal-up" style="width: 18rem;">
-                <img src="assets/RSV-Risk-Profiling.png" class="card-img-top" alt="RSV-Risk-Profiling Research Poster">
-                <div class="card-body">
-                    <h5 class="card-title">Risk Profiling Unvaccinated Children for RSV in Orange County</h5>
-                    <p class="card-text">This project introduces a generative AI agent that bridges clinicians’ questions and statistical analyses, delivering tailored visualizations and interpretable results.</p>
-                    <div class="flex items-center gap-3 mt-3">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rsvRiskProfiling">
-                            Learn More
-                        </button>
-                        <img src="assets/CHOC-logo2.png" class="absolute right-6 bottom-6 h-6 w-auto" alt="CHOC logo">
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="rsvRiskProfiling" tabindex="-1" role="dialog" aria-labelledby="projectTitle" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="projectTitle">Risk Profiling Unvaccinated Children for RSV in Orange County</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <h6 class="text-muted mb-2">Description:</h6>
-                        This is a capstone project for UC Irvine students that analyzes RSV incidence and nirsevimab immunization rates across Orange County.
-                         The project identifies trends in neighborhoods and demographic groups with high RSV positivity rates. To support more efficient 
-                         collaboration between clinicians and biostatisticians, the team proposed a query-based generative AI agent that enables clinicians 
-                         to interact directly with RSV surveillance data, increasing the flexibility of cross-sectional research.
-                        <h6 class="text-muted mb-2">Check it out:</h6>
-                         <div class="row g-4">
-                            <div class="col-12 col-md-6">
-                                <iframe
-                                    src="assets/pdfs/RSV-Risk-Profiling/final-report.pdf"
-                                    class="w-100"
-                                    height="500"
-                                    title="Final Report PDF"
-                                ></iframe>
-                            </div>
-
-                            <div class="col-12 col-md-6">
-                                <iframe
-                                    src="assets/pdfs/RSV-Risk-Profiling/institutional-review-board.pdf"
-                                    class="w-100"
-                                    height="500"
-                                    title="IRB PDF"
-                                ></iframe>
-                            </div>
+    <div class="container py-10">
+        <div class="row row-cols-4 gap-4">
+            <div class="col">
+                <div class="card reveal-up" style="width: 18rem;">
+                    <img src="assets/RSV-Risk-Profiling.png" class="card-img-top" alt="RSV-Risk-Profiling Research Poster">
+                    <div class="card-body">
+                        <h5 class="card-title">Risk Profiling Unvaccinated Children for RSV in Orange County</h5>
+                        <p class="card-text">This project introduces a generative AI agent that bridges clinicians’ questions and statistical analyses, delivering tailored visualizations and interpretable results.</p>
+                        <div class="flex items-center gap-3 mt-3">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rsvRiskProfiling">
+                                Learn More
+                            </button>
+                            <img src="assets/CHOC-logo2.png" class="absolute right-6 bottom-6 h-6 w-auto" alt="CHOC logo">
                         </div>
                     </div>
-                   
                 </div>
             </div>
-            
+
+            <div class="col">
+                <div class="card reveal-up" style="width: 18rem;">
+                    <img src="assets/placeholder-image.png" class="card-img-top" alt="dehydration-solutions">
+                    <div class="card-body">
+                        <h5 class="card-title">Developing Personalized Pediatric Dehydration Solutions</h5>
+                        <p class="card-text">UC Irvine Data Science Student team developed algorithms to analyze deidentified clinical data, identifying unique patient
+                                            subgroups and examining treatment effects on hydration management.</p>
+                        <div class="flex items-center gap-3 mt-3">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dehydration-solutions">
+                                Learn More
+                            </button>
+                            <img src="assets/CHOC-logo2.png" class="absolute right-6 bottom-6 h-6 w-auto" alt="CHOC logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="rsvRiskProfiling" tabindex="-1" role="dialog" aria-labelledby="projectTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectTitle">Risk Profiling Unvaccinated Children for RSV in Orange County</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h6 class="text-muted mb-2">Description:</h6>
+                This is a capstone project for UC Irvine students that analyzes RSV incidence and nirsevimab immunization rates across Orange County.
+                    The project identifies trends in neighborhoods and demographic groups with high RSV positivity rates. To support more efficient 
+                    collaboration between clinicians and biostatisticians, the team proposed a query-based generative AI agent that enables clinicians 
+                    to interact directly with RSV surveillance data, increasing the flexibility of cross-sectional research.
+                <h6 class="text-muted mb-2">Check it out:</h6>
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6">
+                            <iframe
+                                src="assets/pdfs/RSV-Risk-Profiling/final-report.pdf"
+                                class="w-100"
+                                height="500"
+                                title="Final Report PDF"
+                            ></iframe>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <iframe
+                                src="assets/pdfs/RSV-Risk-Profiling/institutional-review-board.pdf"
+                                class="w-100"
+                                height="500"
+                                title="IRB PDF"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="dehydration-solutions" tabindex="-1" role="dialog" aria-labelledby="projectTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectTitle">UC Irvine Data Science Students Partner with CHOC Research and Rady Children's Health to
+                        Develop Personalized Pediatric Dehydration Management Solutions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-muted mb-2">Description:</h6>
+                    This is collaboration demonstrates the transformative potential of academic clinical partnerships in advancing
+                    pediatric healthcare through data science innovation. The primary objective focused on predicting post 
+                    treatment serum sodium levels to optimize hydration therapy.
+                    <h6 class="text-muted mb-2">Check it out:</h6>
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6">
+                            <iframe
+                                src="assets/pdfs/Pediatric-Dehydration-Management/press-release.pdf"
+                                class="w-100"
+                                height="500"
+                                title="Press Release PDF"
+                            ></iframe>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <iframe
+                                src="assets/pdfs/Pediatric-Dehydration-Management/project_poster.pdf"
+                                class="w-100"
+                                height="500"
+                                title="Project Poster"
+                            ></iframe>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </div>
     
