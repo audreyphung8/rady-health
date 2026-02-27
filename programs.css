@@ -123,10 +123,45 @@ h4 {
   align-items: center;
 }
 
+.hero-device-trials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/research.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .hero-partners {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/LABest.png");
   background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-education {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/medical-education.png");
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-implementation {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/implementation-science.png");
+  background-position: 50% 30%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -155,7 +190,7 @@ h4 {
 }
 
 .hero-text h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 48px;
   color: white;
 }
@@ -203,4 +238,11 @@ h4 {
     transform: none;
     opacity: 1;
   }
+}
+
+.custom-font{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #0165a4;
+  
 }
