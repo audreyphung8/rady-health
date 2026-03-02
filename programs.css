@@ -244,5 +244,20 @@ h4 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: #0165a4;
-  
+}
+
+.contactParagraph{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 350;
+  font-size: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #0165a4;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
 }

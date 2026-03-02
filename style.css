@@ -271,6 +271,13 @@ a {
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-
-
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #0165a4;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
 
